@@ -1,0 +1,188 @@
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Menu</title>
+        
+        
+        <style type="text/css">
+        #my_navigation{float:left;width120px;}
+        p{style="padding-left:14em"}
+        #my_main{float:left;width120px;}
+        </style>
+        
+        <style>
+        #x{
+        width:auto;
+        height:auto;
+        margin:10px 0 0;
+        color:white;
+        
+        padding:10px 20px;
+        line-height:150%;
+        }
+      
+        .a{
+        text-shadow:
+        -1px -1px #000,
+        1px -1px #000,
+        -1px 1px #000,
+        1px 1px #000;
+        }
+        .b{
+        text-shadow:
+        -2px -2px #fff,
+        2px -2px #fff,
+        -2px 2px #fff,
+        2px 2px #fff;
+        }
+        
+        
+        </style>
+        
+    </head>
+    <body background="pizza.jpg">
+        <h1>Menu</h1>
+        <h4>カーソルを合わせると商品の画像が表示されます。</h4>
+        <div id="my_main">
+        
+        <div id="my_navigation">
+    <br>
+    <br>
+    
+    <a href="index.html" style="text-decoration:none;">
+    <div align="center" id="x"  style="background-color:rgba(230,128,114,1)">
+    <font size="5" font face="selif">
+    <p>home</p>
+    </font>
+    </div>
+    </a>
+    
+    <a href="add.html" style="text-decoration:none;">
+    <div align="center" id="x"  style="background-color:rgba(188,143,143,1)">
+    <font size="5" font face="selif">
+    <p>menu</p>
+    </font>
+    </div>
+    </a>
+    
+    <a href="order.html" style="text-decoration:none;">
+    <div id="x"  style="background-color:rgba(140,200,140,1)">
+    <font size="5" font face="selif">
+    <p>staff only</p>
+    </font>
+    </div>
+    </a>
+    
+    </div>
+    
+    
+    
+    <font color="black" class="b">
+    <div>
+    <p style="padding-left:14em">
+    <span onmouseover="document.potemayo.src='maru.jpg';" onmouseout="document.potemayo.src='potemayo.jpg';">
+	＊マルゲリータ
+	</span>
+	<br>
+	<span onmouseover="document.potemayo.src='tomato.jpg';" onmouseout="document.potemayo.src='potemayo.jpg';">
+	＊トマト&ベーコン
+	</span>
+    <br>
+    <span onmouseover="document.potemayo.src='potemayo.jpg';" onmouseout="document.potemayo.src='potemayo.jpg';">
+	＊ポテマヨ
+	</span>
+    <br>
+    <span onmouseover="document.potemayo.src='meat.jpg';" onmouseout="document.potemayo.src='potemayo.jpg';">
+	＊ボーノミート
+	</span>
+    <br>
+    <span onmouseover="document.potemayo.src='sea.jpg';" onmouseout="document.potemayo.src='potemayo.jpg';">
+	＊シーフード
+	</span>
+    <br>
+    <span onmouseover="document.potemayo.src='teriyaki.jpg';" onmouseout="document.potemayo.src='potemayo.jpg';">
+	＊テリヤキチキン
+	</span>
+    <br>
+    <span onmouseover="document.potemayo.src='Italian.jpg';" onmouseout="document.potemayo.src='potemayo.jpg';">
+	＊イタリアンスペシャル
+	</span>
+	<br>
+    </p>
+    </div>
+    </font>
+        
+        
+        <table style="color:white">
+        <form method="post" action="/add">
+            <tr><th class="a">NAME:</th>
+            <td>
+            
+            
+            
+            
+            
+              <input type="text" name="name">
+            
+            
+            </td>
+            </tr>
+
+            <tr><th class="a">MENU:</th>
+            <td>
+            
+            
+            <select name="menu" size="3">
+            
+            <option value="マルゲリータ">マルゲリータ</option>
+            <option value="トマト&ベーコン">トマト&ベーコン</option>
+            <option value="ポテマヨ">ポテマヨ</option>
+            <option value="ボーノミート">ボーノミート</option>
+            <option value="シーフード">シーフード</option>
+            <option value="テリヤキチキン">テリヤキチキン</option>
+            <option value="イタリアンスペシャル">イタリアンスペシャル</option>
+            
+            
+            </select>
+            
+            
+            </td>
+            </tr>
+            
+            
+            <tr><th class="a">COUNT:</th>
+            <td>
+            
+            
+            <input type="number" name="count" step="1" min="1" value="1">
+            
+            <!--  <textarea name="comment">
+            </textarea> -->
+            
+            </td>
+            </tr>
+            
+            
+            <tr><th></th><td><input type="submit" value="追加"></td></tr>
+        </form>
+        </table>
+        
+        </div>
+        <p>
+        
+		<img name="potemayo" alt="Sample" src="teriyaki.jpg">
+		
+		
+		
+		</p>
+        
+        <!-- 
+        <img src="potemayo.jpg" alt="teriyaki.jpg"
+        onmouseover="this.src='teriyaki.jpg'"
+        onmouseout="this.src='potemayo.jpg'">
+ -->
+        
+    </body>
+</html>
